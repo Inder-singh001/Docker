@@ -6,5 +6,8 @@
 
 ## Uses of docker
 
-## Installation in Linux
+## Installation
+
+#### Specs required
+
 

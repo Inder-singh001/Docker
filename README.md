@@ -73,18 +73,13 @@ Open the terminal and start the docker then write
 Let's create a contianer by creating an image. For this
 - Firstly, create a dockerfile, `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
 - Write \
->  `# syntax=docker/dockerfile:1 
-\
+>  # syntax=docker/dockerfile:1 
   FROM python:3.8-slim-buster \
-\
   WORKDIR /app \
-\
   COPY requirements.txt requirements.txt \
   RUN pip3 install -r requirements.txt \
-\
   COPY . . \
-\
-  CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]` 
+  CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
  
 

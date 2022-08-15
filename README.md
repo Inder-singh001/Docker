@@ -1,5 +1,5 @@
 # Docker
-[Docker](https://docs.docker.com/)is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your host machine so you can deliver software quickly.Docker provides the ability to package and run an application in a loosely isolated environment called a container.Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host.
+[Docker](https://docs.docker.com/) is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your host machine so you can deliver software quickly.Docker provides the ability to package and run an application in a loosely isolated environment called a container.Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host.
 
 ## What is container
 A **Container** is a box that process isolated environment on your machine from all other processes on the host machine.It is a platform where you can run the images.
@@ -8,7 +8,7 @@ A **Container** is a box that process isolated environment on your machine from 
 - It can be run on local machines, virtual machines or deployed to the cloud and is poratble i.e can rum on any OS.
 
 ## Images
-An image is a read-only template with instructions. An image is a software which contains his whole libraries that are required to the user for usage of the software such as pyhton, mysql, mariaDB, redis, etc. You can also create your own images using dockerfile.
+An **image** is a read-only template with instructions. An image is a software which contains his whole libraries that are required to the user for usage of the software such as pyhton, mysql, mariaDB, redis, etc. You can also create your own images using dockerfile.
 
 ## Docker Manuals
 #### Docker Desktop

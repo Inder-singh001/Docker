@@ -9,6 +9,7 @@ A **Container** is a box that process isolated environment on your machine from 
 
 ## Images
 An **image** is a read-only template with instructions. An image is a software which contains his whole libraries that are required to the user for usage of the software such as pyhton, mysql, mariaDB, redis, etc. You can also create your own images using dockerfile.
+---
 
 ## Docker Manuals
 #### Docker Desktop
@@ -27,8 +28,20 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 
 > To install Docker:
   Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
+---
 
-#### Specs required
+### Some mainly used Docker Commands
+- docker --user Start docker-desktop - To start the docker desktop
+- docker run - run container in image locally or go to hub
+- docker ps - lists the running container in docker desktop 
+- docker ps -a - outputs all the container running or previously running(stopped)
+- docker stop <conatinername> - stops the container
+- docker rm <containername> - removes the container
+- docker images - lists the images present in your dockre desktop
+- docker rmi <imagename>- removes images
+- docker pull <imagename> - pulls the image from docker hub
+
+
 
 [References Commands to use docker](https://docs.docker.com/reference/)
 

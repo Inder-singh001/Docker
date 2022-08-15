@@ -20,7 +20,7 @@ An **image** is a read-only template with instructions. An image is a software w
 - remove  
 - restart
 - pull
-- push
+- push \
   etc, the containers and images.
 #### Docker Engine
 [Docker Engine](https://docs.docker.com/engine) is an open source containerization technology for building and containerizing your applications.It creates and manages the work of the containers, images,volumes, and environments.
@@ -44,7 +44,7 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 - `docker pull <imagename>` - pulls the image from docker hub
 # DEMO
 ### Creating a simple container
-Let's create a container using an image pulled from Docker Hub.Check the image you want to pull from Docker Hub.Open the terminal and start the docker then write
+Let's create a container using an image pulled from Docker Hub.Check the image you want to pull from Docker Hub.\ Open the terminal and start the docker then write
 - `$ docker run -i -t --name mysql mysql` this will run container with an image MYSQL and download it from Docker Hub
 - This will show an error that create a root password. However, MySQL requires a password to access databases. 
 - Thus, again write the command

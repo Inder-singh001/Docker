@@ -49,7 +49,22 @@ Let's create a container using an image pulled from Docker Hub.Check the image y
 - This will show an error that create a root password. However, MySQL requires a password to access databases. 
 - Thus, again write the command
 `docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql`
-![mysql](/home/inder/Pictures/Screenshots)
+`Unable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+32c1bf40aba1: Pull complete 
+3ac22f3a638d: Pull complete 
+b1e7273ed05e: Pull complete 
+20be45a0c6ab: Pull complete 
+410a229693ff: Pull complete 
+1ce71e3a9b88: Pull complete 
+c93c823af05b: Pull complete 
+c6752c4d09c7: Pull complete 
+d7f2cfe3efcb: Pull complete 
+916f32cb0394: Pull complete 
+0d62a5f9a14f: Pull complete 
+Digest: sha256:ce2ae3bd3e9f001435c4671cf073d1d5ae55d138b16927268474fc54ba09ed79
+Status: Downloaded newer image for mysql:latest`
+
 - Your container is ready for work!
 
  

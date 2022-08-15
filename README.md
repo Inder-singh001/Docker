@@ -49,7 +49,7 @@ Open the terminal and start the docker then write
 - `$ docker run -i -t --name mysql mysql` this will run container with an image MYSQL and download it from Docker Hub
 - This will show an error that create a root password. However, MySQL requires a password to access databases. 
 - Thus, again write the command
-`docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql`
+`docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql` \
 `Unable to find image 'mysql:latest' locally
 latest: Pulling from library/mysql
 32c1bf40aba1: Pull complete 

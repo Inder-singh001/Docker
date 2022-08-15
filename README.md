@@ -19,14 +19,14 @@ An **image** is a read-only template with instructions. An image is a software w
 - restart
 - pull
 - push
-etc, the containers and images.
+  etc, the containers and images.
 #### Docker Engine
 [Docker Engine](https://docs.docker.com/engine) is an open source containerization technology for building and containerizing your applications.It creates and manages the work of the containers, images,volumes, and environments.
 #### Docker Hub
 A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub where you can find and share containers and images. It is a largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers.
 
 > To install Docker:
-Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
+  Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
 
 #### Specs required
 

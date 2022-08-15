@@ -9,6 +9,7 @@ A **Container** is a box that process isolated environment on your machine from 
 
 ## Images
 An **image** is a read-only template with instructions. An image is a software which contains his whole libraries that are required to the user for usage of the software such as pyhton, mysql, mariaDB, redis, etc. You can also create your own images using dockerfile.
+
 ---
 
 ## Docker Manuals
@@ -28,6 +29,7 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 
 > To install Docker:
   Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
+  
 ---
 
 ### Some mainly used Docker Commands

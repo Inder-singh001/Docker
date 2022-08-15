@@ -1,5 +1,5 @@
 # Docker
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your host machine so you can deliver software quickly.Docker provides the ability to package and run an application in a loosely isolated environment called a container.Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host.
+[Docker](https://docs.docker.com/)is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your host machine so you can deliver software quickly.Docker provides the ability to package and run an application in a loosely isolated environment called a container.Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host.
 
 ## What is container
 A **Container** is a box that process isolated environment on your machine from all other processes on the host machine.It is a platform where you can run the images.
@@ -22,10 +22,11 @@ An image is a read-only template with instructions. An image is a software which
 etc, the containers and images.
 #### Docker Engine
 [Docker Engine](https://docs.docker.com/engine) is an open source containerization technology for building and containerizing your applications.It creates and manages the work of the containers, images,volumes, and environments.
-#### Docker
+#### Docker Hub
 A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub where you can find and share containers and images. It is a largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers.
 
-## Installation
+> To install Docker:
+Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
 
 #### Specs required
 

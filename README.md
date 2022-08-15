@@ -42,6 +42,7 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 - `docker images` - lists the images present in your dockre desktop
 - `docker rmi <imagename>` - removes images
 - `docker pull <imagename>` - pulls the image from docker hub
+- `sudo service docker status` - tells the status of docker 
 # DEMO
 ### Creating a simple container
 Let's create a container using an image pulled from Docker Hub.Check the image you want to pull from Docker Hub.\
@@ -49,8 +50,8 @@ Open the terminal and start the docker then write
 - `$ docker run -i -t --name mysql mysql` this will run container with an image MYSQL and download it from Docker Hub
 - This will show an error that create a root password. However, MySQL requires a password to access databases. 
 - Thus, again write the command
-`docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql` \
-`Unable to find image 'mysql:latest' locally
+`docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql`
+> Unable to find image 'mysql:latest' locally
 latest: Pulling from library/mysql
 32c1bf40aba1: Pull complete 
 3ac22f3a638d: Pull complete 
@@ -67,6 +68,23 @@ Digest: sha256:ce2ae3bd3e9f001435c4671cf073d1d5ae55d138b16927268474fc54ba09ed79
 Status: Downloaded newer image for mysql:latest`
 
 - Your container is ready for work!
+
+### Creating a container with own image
+Let's create a contianer by creating an image. For this
+- Firstly, create a dockerfile, `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
+- Write 
+> # syntax=docker/dockerfile:1
+
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
  
 

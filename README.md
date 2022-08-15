@@ -42,8 +42,17 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 - `docker images` - lists the images present in your dockre desktop
 - `docker rmi <imagename>` - removes images
 - `docker pull <imagename>` - pulls the image from docker hub
-### Tags
-- 
+# DEMO
+### Creating a simple container
+Let's create a container using an image pulled from Docker Hub.Check the image you want to pull from Docker Hub.Open the terminal and start the docker then write
+- `$ docker run -i -t --name mysql mysql` this will run container with an image MYSQL and download it from Docker Hub
+- This will show an error that create a root password. However, MySQL requires a password to access databases. 
+- Thus, again write the command
+`docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql`
+![mysql](/home/inder/Pictures/Screenshots)
+- Your container is ready for work!
+
+ 
 
 
 

@@ -27,7 +27,7 @@ An **image** is a read-only template with instructions. An image is a software w
 #### Docker Hub
 A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub where you can find and share containers and images. It is a largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers.
 
-> To install Docker:
+> To install Docker: \
   Refer to the link [Install Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/)
   
 ---
@@ -51,40 +51,40 @@ Open the terminal and start the docker then write
 - This will show an error that create a root password. However, MySQL requires a password to access databases. 
 - Thus, again write the command
 `docker run -it -e MYSQL_ROOT_PASSWORD=mysql --name mysql mysql`
-> Unable to find image 'mysql:latest' locally
-latest: Pulling from library/mysql
-32c1bf40aba1: Pull complete 
-3ac22f3a638d: Pull complete 
-b1e7273ed05e: Pull complete 
-20be45a0c6ab: Pull complete 
-410a229693ff: Pull complete 
-1ce71e3a9b88: Pull complete 
-c93c823af05b: Pull complete 
-c6752c4d09c7: Pull complete 
-d7f2cfe3efcb: Pull complete 
-916f32cb0394: Pull complete 
-0d62a5f9a14f: Pull complete 
-Digest: sha256:ce2ae3bd3e9f001435c4671cf073d1d5ae55d138b16927268474fc54ba09ed79 
-Status: Downloaded newer image for mysql:latest`
+> Unable to find image 'mysql:latest' locally \
+  latest: Pulling from library/mysql \
+  32c1bf40aba1: Pull complete \
+  3ac22f3a638d: Pull complete \
+  b1e7273ed05e: Pull complete \
+  20be45a0c6ab: Pull complete \
+  410a229693ff: Pull complete \
+  1ce71e3a9b88: Pull complete \
+  c93c823af05b: Pull complete \
+  c6752c4d09c7: Pull complete \
+  d7f2cfe3efcb: Pull complete \
+  916f32cb0394: Pull complete \
+  0d62a5f9a14f: Pull complete \
+  Digest: sha256:ce2ae3bd3e9f001435c4671cf073d1d5ae55d138b16927268474fc54ba09ed79 \
+  Status: Downloaded newer image for mysql:latest \
 
 - Your container is ready for work!
 
 ### Creating a container with own image
 Let's create a contianer by creating an image. For this
 - Firstly, create a dockerfile, `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
-- Write 
-> # syntax=docker/dockerfile:1
-
-FROM python:3.8-slim-buster
-
-WORKDIR /app
-
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-
-COPY . .
-
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+- Write \
+> # syntax=docker/dockerfile:1 \
+\
+  FROM python:3.8-slim-buster \
+\
+  WORKDIR /app \
+\
+  COPY requirements.txt requirements.txt \
+  RUN pip3 install -r requirements.txt \
+\
+  COPY . . \
+\
+  CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"] 
 
  
 

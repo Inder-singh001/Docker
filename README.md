@@ -33,15 +33,17 @@ A [Docker Hub](https://docs.docker.com/docker-hub) is a open-source software hub
 ---
 
 ### Some mainly used Docker Commands
-- docker --user Start docker-desktop - To start the docker desktop
-- docker run - run container in image locally or go to hub
-- docker ps - lists the running container in docker desktop 
-- docker ps -a - outputs all the container running or previously running(stopped)
-- docker stop <conatinername> - stops the container
-- docker rm <containername> - removes the container
-- docker images - lists the images present in your dockre desktop
-- docker rmi <imagename>- removes images
-- docker pull <imagename> - pulls the image from docker hub
+- `docker --user Start docker-desktop` - To start the docker desktop
+- `docker run` - run container in image locally or go to hub
+- `docker ps` - lists the running container in docker desktop 
+- `docker ps -a` - outputs all the container running or previously running(stopped)
+- `docker stop <conatinername>` - stops the container
+- `docker rm <containername>` - removes the container
+- `docker images` - lists the images present in your dockre desktop
+- `docker rmi <imagename>` - removes images
+- `docker pull <imagename>` - pulls the image from docker hub
+### Tags
+- 
 
 
 

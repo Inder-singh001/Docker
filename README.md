@@ -70,10 +70,10 @@ Open the terminal and start the docker then write
 - Your container is ready for work!
 
 ### Creating a container with own image
-Let's create a contianer by creating an image. For this
-- Firstly, create a dockerfile, `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
+Let's create a contianer by creating an image in which we will work in [PYTHON](https://docs.docker.com/language/python/). For this
+- Firstly, [create a dockerfile](https://docs.docker.com/engine/reference/builder/), `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
 - Write \
->  # syntax=docker/dockerfile:1 
+>  #syntax=docker/dockerfile:1 \
    FROM python:3.8-slim-buster \
    WORKDIR /app \
    COPY requirements.txt requirements.txt \

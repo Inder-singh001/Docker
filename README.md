@@ -71,20 +71,20 @@ Open the terminal and start the docker then write
 
 ### Creating a container with own image
 Let's create a contianer by creating an image in which we will work in [PYTHON](https://docs.docker.com/language/python/). Create a simple python application using Flask framework, make a directory
-> $ cd /path/to/python-docker
-  $ pip3 install Flask
-  $ pip3 freeze | grep Flask >> requirements.txt
-  $touch app.py
+> $ cd /path/to/python-docker \
+  $ pip3 install Flask \
+  $ pip3 freeze | grep Flask >> requirements.txt \
+  $touch app.py 
 - Open your code editor and create a file name `app.py`.Enter the code to the file
-> from flask import Flask
-  app = Flask(__name__)
+> from flask import Flask \
+  app = Flask(__name__) \
 
-  @app.route('/')
-  def hello_world():
+  @app.route('/') \
+  def hello_world(): \
       return 'Hello, Docker!'
+- Test the code id running properly by using the command `python3 -m flask run`
 
-
-- Firstly, [create a dockerfile](https://docs.docker.com/engine/reference/builder/), `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
+- Now, [create a dockerfile](https://docs.docker.com/engine/reference/builder/), `cat > dockerfile << EOF`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`.
 - Write 
 >  #syntax=docker/dockerfile:1 \
    FROM python:3.8-slim-buster \

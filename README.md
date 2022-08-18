@@ -82,7 +82,7 @@ Let's create a contianer by creating an image in which we will work in [PYTHON](
   def hello_world(): \
       return 'Hello, Docker!'
 - Test the code id running properly by using the command `python3 -m flask run` on the terminal.
-- Now, [create a dockerfile](https://docs.docker.com/engine/reference/builder/), `sudo vim dockerfile`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`. \
+- Now, [create a dockerfile](https://docs.docker.com/engine/reference/builder/), in the terminal and write`$ sudo vim dockerfile`. You can also name the file in `<name>.dockerfile` or `dockerfile.<name>`. \
 A dockerfile is a text document contains the instructionto assemble a docker image. \
 It contains the instruction of the process of the libraries, path etc, of the image is to be defined.
 - Follow the syntax-

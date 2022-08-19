@@ -103,12 +103,12 @@ It contains the instruction of the process of the libraries, path etc, of the im
   => resolve image config for docker.io/d  4.9s \
   => [auth] docker/dockerfile:pull token   0.0s \
   => CACHED docker-image://docker.io/dock  0.0s \
-  => [internal] load build definition fro  0.0s \ 
-  => [internal] load .dockerignore         0.0s \ 
-  => [internal] load metadata for docker.  2.9s \ 
-  => [auth] library/python:pull token for  0.0s \  
-  => [internal] load build context         0.5s \ 
-  => => transferring context: 1.47kB       0.1s \ 
+  => [internal] load build definition fro  0.0s \
+  => [internal] load .dockerignore         0.0s \
+  => [internal] load metadata for docker.  2.9s \
+  => [auth] library/python:pull token for  0.0s \
+  => [internal] load build context         0.5s \
+  => => transferring context: 1.47kB       0.1s \
   => [1/5] FROM docker.io/library/python:  0.0s \
   => CACHED [2/5] WORKDIR /app             0.0s \
   => [3/5] COPY requirements.txt requirem  1.4s \

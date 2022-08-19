@@ -70,7 +70,7 @@ Open the terminal and start the docker then write
 - Your container is ready for work!
 
 ### Creating a container with own image
-Let's create a contianer by creating an image in which we will work in [PYTHON](https://docs.docker.com/language/python/). Create a simple python application using Flask framework, make a directory
+Let's create a contianer by creating an image in which we will work in [PYTHON](https://docs.docker.com/language/python/). Create a simple python application using Flask framework in your favourite IDE or Text Editor (we recommend to use [Visual Studio Code](https://code.visualstudio.com/download)), make a directory
 > $ cd /path/to/python-docker \
   $ pip3 install Flask \
   $ pip3 freeze | grep Flask >> requirements.txt \
@@ -95,8 +95,30 @@ It contains the instruction of the process of the libraries, path etc, of the im
    CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 - Build the image to the conatainer \
 `docker build -t python-docker` \
-
- 
+> [+] Building 56.6s (16/16) FINISHED \           
+  => [internal] load build definition fro  0.6s \
+  => => transferring dockerfile: 258B      0.0s \
+  => [internal] load .dockerignore         0.4s \
+  => => transferring context: 2B           0.0s \
+  => resolve image config for docker.io/d  4.9s \
+  => [auth] docker/dockerfile:pull token   0.0s \
+  => CACHED docker-image://docker.io/dock  0.0s \
+  => [internal] load build definition fro  0.0s \ 
+  => [internal] load .dockerignore         0.0s \ 
+  => [internal] load metadata for docker.  2.9s \ 
+  => [auth] library/python:pull token for  0.0s \  
+  => [internal] load build context         0.5s \ 
+  => => transferring context: 1.47kB       0.1s \ 
+  => [1/5] FROM docker.io/library/python:  0.0s \
+  => CACHED [2/5] WORKDIR /app             0.0s \
+  => [3/5] COPY requirements.txt requirem  1.4s \
+  => [4/5] RUN pip3 install -r requireme  38.2s \
+  => [5/5] COPY . .                        1.8s \
+  => exporting to image                    3.7s \
+  => => exporting layers                   3.0s \
+  => => writing image sha256:71a70f7e118f  0.1s \
+  => => naming to docker.io/library/pytho  0.1s 
+  
 
 
 
